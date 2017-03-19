@@ -64,7 +64,7 @@ body {
   margin-top: 100px;
   font-weight: 300;
   font-size: 54px;
-  text-align: center;
+  text-align: left;
   letter-spacing: 0px; }
   #header a {
     text-decoration: none; }
@@ -306,9 +306,9 @@ footer {
   font-weight: 300;
   bottom: 0;
   /*color: #aaaaaa;
-  
+
   font-size: 14px;*/
-	
+
 }
   footer li {
     font-size: 1.75em;
@@ -332,7 +332,7 @@ margin-bottom: 0.25em;
 
 .connect-item {
   display: inline-block;
-  text-align: center;
+  text-align: left;
   vertical-align: top;
   flex-basis: 25%; }
   .connect-item__link {
@@ -451,7 +451,7 @@ a:hover img {
 .collapse-container > :nth-child(even) {
   display: none;
   padding-left: 0.5rem;
-	
+
 }
 
 .highlight {
@@ -784,8 +784,8 @@ footer a {
     text-decoration: none;
     color: inherit;
 }
-	  
+
 u.dotted{
   border-bottom: 1px dotted #000;
-  text-decoration: none; 
+  text-decoration: none;
 }
