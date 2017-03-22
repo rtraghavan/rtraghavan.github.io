@@ -88,7 +88,7 @@ footer {
 }
 
 footer li {
-  font-size: 2.00em;
+  font-size: 1.00em;
   margin: 1em 0;
   list-style-type: none;
   display: inline;
@@ -105,6 +105,30 @@ footer a {
     color: inherit;
 }
 
+
+nav {
+  text-align: center;
+  font-weight: 300;
+  bottom: 0;
+}
+
+nav li {
+  font-size: 2.00em;
+  margin: 1em 0;
+  list-style-type: none;
+  display: inline;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 0.25em;
+}
+
+nav a {
+    text-decoration: none;
+    color: inherit;
+}
 
 ul {
   list-style-type: none;
