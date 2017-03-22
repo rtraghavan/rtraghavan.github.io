@@ -88,10 +88,12 @@ footer {
 }
 
 footer li {
-  font-size: 1.50em;
-  margin: 1em 0;
-  list-style-type: none;
-  display: inline;
+  font: 20px/1.4 "Lato", sans-serif;
+
+  margin: 0 100px
+  font-weight: 300;
+  padding-top: 1em;
+  text-align: justify;}
 }
 
 footer ul {
@@ -113,7 +115,7 @@ nav {
 }
 
 nav li {
-  font-size: 2.00em;
+  font-size: 4.00em;
   margin: 1em 0;
   list-style-type: none;
   display: inline;
