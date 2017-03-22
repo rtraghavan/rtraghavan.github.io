@@ -1,4 +1,4 @@
 <p>I am a postdoctoral associate in the Center for Neural Science at NYU carrying out research in the laboratory of <a href="//www.cns.nyu.edu/corefaculty/Movshon.php"> Tony Movshon.</a>
 I am broadly interested in the structural organization of the striate and extrastriate cortex and how visual perception arises from this organization. My current interests are the laminar processing of information in the primary visual cortex, the construction of visual motion representations in area MT, and how visual motion representations are used to guide the execution of slow eye movements in both health and disease.
 I did my PhD in the Department of Neurobiology at Duke University in the laboratories of <a href="//www.neuro.duke.edu/research/faculty-labs/lisberger-lab"> Stephen G. Lisberger</a> and
-<a href="//sommerlab.pratt.duke.edu"> Marc A. Sommer</a> where I studied the role of different sites of the cerebellum in the control of smooth pursuit and saccadic eye movements. 
+<a href="//sommerlab.pratt.duke.edu"> Marc A. Sommer</a> where I studied the role of different sites of the cerebellum in the control of smooth pursuit and saccadic eye movements.</p></br>
