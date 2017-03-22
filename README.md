@@ -1,6 +1,7 @@
 ## Welcome to Personal Webpage of Ramanujan Raghavan
 
-Feel free to use this page as a template for your own, I did the same.
+I based my page on the sourcecode at https://github.com/oliviaguest/oliviaguest.github.io 
+It has been heavily edited, feel free to use it to structure your own page if you see fit. 
 
 ### Markdown
 I'm keeping the markdown syntax that came with the original README file, I find it useful
