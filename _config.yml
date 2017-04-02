@@ -1,2 +1,4 @@
 name: Ramanujan Raghavan
 markdown: kramdown
+gems:
+  - jekyll-sitemap
