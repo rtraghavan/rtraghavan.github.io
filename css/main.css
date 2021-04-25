@@ -1,6 +1,6 @@
 body {
   background: #fff;
-  font: 16px/1.4 "Palatino", sans-serif;
+  font: 16px/1.4 "Helvetica", sans-serif;
   color: #000; }
 
 #header {
@@ -48,7 +48,7 @@ a {
 
 
 p {
-    font:palatino
+    font:helvetica
     font-size: 1.5em;
     line-height: 1.4em;
     color: #333;
