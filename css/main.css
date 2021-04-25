@@ -1,12 +1,12 @@
 body {
   background: #fff;
-  font: 20px Helvetica, sans-serif;
+  font: 16px/1.4 "Lato", sans-serif;
   color: #000; }
 
 #header {
-  font: 48px Helvetica
   margin-top: 50px;
   font-weight: 300;
+  font-size: 48px;
   text-align: center;
   letter-spacing: 0px; }
   #header a {
@@ -48,7 +48,6 @@ a {
 
 
 p {
-    font:helvetica
     font-size: 1.5em;
     line-height: 1.4em;
     color: #333;
