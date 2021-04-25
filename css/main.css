@@ -1,12 +1,12 @@
 body {
   background: #fff;
-  font: 16px/1.4 "Lato", sans-serif;
+  font: 16px/1.4 "Helvetica", sans-serif;
   color: #000; }
 
 #header {
+  font: 48px Helvetica;
   margin-top: 50px;
   font-weight: 300;
-  font-size: 48px;
   text-align: center;
   letter-spacing: 0px; }
   #header a {
@@ -88,7 +88,7 @@ footer {
 }
 
 footer li {
-  font: 20px/1.4 "Lato", sans-serif;
+  font: 20px/1.4 "Helvetica", sans-serif;
 
   margin: 0 100px
   font-weight: 300;
