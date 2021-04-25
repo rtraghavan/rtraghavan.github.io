@@ -4,6 +4,7 @@ body {
   color: #000; }
 
 #header {
+  font: Helvetica
   margin-top: 50px;
   font-weight: 300;
   font-size: 48px;
