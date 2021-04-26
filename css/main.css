@@ -13,7 +13,7 @@ body {
     text-decoration: none; }
 
 #description {
-  margin: 0 100px
+  margin: 0 30px
   font-weight: 300;
   padding-top: 1em;
   text-align: justify;}
@@ -82,16 +82,21 @@ img {
   max-width: 100%; }
 
 footer {
-  text-align: center;
   font-weight: 300;
   bottom: 0;
 }
 
 footer li {
-  font: 20px/1.4 "Helvetica", sans-serif;
+  font: 20px/1.4 "Palatino", sans-serif;
+    text-align: center;
 
-  margin: 0 100px
+<<<<<<< HEAD
+  margin: 0 300px
   font-weight: 300;
+=======
+  margin: 0 100px
+  font-weight: 800;
+>>>>>>> 6df0e4b38a821f3e106617adf7835523311f0819
   padding-top: 1em;
   text-align: justify;}
 }
@@ -100,6 +105,7 @@ footer ul {
     padding: 0;
     margin: 0;
     margin-bottom: 0.25em;
+    text-align:center
 }
 
 footer a {
@@ -134,17 +140,25 @@ nav a {
 
 ul {
   list-style-type: none;
-  margin: 0;
+<<<<<<< HEAD
+  margin: 0px;
   padding: 0;
   background-color: white;
-  text-align: center;
   text-decoration: none;
+  text-align:center;
 
-
+=======
+  padding: 0;
+  background-color: white;
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+>>>>>>> 6df0e4b38a821f3e106617adf7835523311f0819
 }
 
 li {
     display: inline-block;
+    text-align:center;
 }
 
 
@@ -161,6 +175,6 @@ li a {
 /*making a navigation bar*/
 .container {
   margin: 0 auto;
-  max-width: 1000px;
+  max-width: 2000px;
   padding: 0 10px;
   width: 100%; }
