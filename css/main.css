@@ -89,6 +89,7 @@ footer {
 
 footer li {
   font: 20px/1.4 "Helvetica", sans-serif;
+    text-align: center;
 
   margin: 0 100px
   font-weight: 300;
