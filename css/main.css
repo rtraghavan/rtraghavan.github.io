@@ -2,7 +2,6 @@ body {
   background: #fff;
   font: 16px/1.4 "Helvetica", sans-serif;
   color: #000; }
-
 #header {
   font: 48px Helvetica;
   margin-top: 50px;
@@ -27,6 +26,7 @@ body {
 
 
 a {
+  word-spacing:-4px;
   outline: 0;
   color: #000;
   text-decoration: underline;
@@ -54,7 +54,8 @@ p {
 }
 
 h1 {
-  font-size: 30px;
+  text-decoration: underline;
+  font: 32px "Helvetica",sans-serif;
   padding-top: 0.3em;
   padding-bottom: 0.3em; }
   h1 a {
