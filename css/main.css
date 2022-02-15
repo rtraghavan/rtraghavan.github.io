@@ -37,7 +37,7 @@ a {
   -moz-transition: all 0.4s ease-out;
   transition: all 0.4s ease-out; }
   a:hover, a:active {
-    color: #006633;
+    color: #FA9F42;
     text-decoration: none;
     -webkit-transition: opacity 0.4s linear;
     opacity: 1;
