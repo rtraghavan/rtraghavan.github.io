@@ -62,8 +62,8 @@ h1 {
     color: inherit; }
 
 h2 {
-  font-size: 24px; }
-
+  font: 24px "Helvetica",sans-serif;
+}
 h3 {
   font-size: 20px; }
 
@@ -157,7 +157,7 @@ li a {
 }
 
 .active {
-    color: #006633;
+    color: #FA9F42;
 }
 /*making a navigation bar*/
 .container {
