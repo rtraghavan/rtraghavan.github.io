@@ -3,7 +3,7 @@
 <h1> Motor control/planning </h1>
 <h2> Cerebellar control of smooth pursuit eye movements </h2>
 
-![image]("F01.png")
+![image](../img/F01.png)
 * hi
 * hi hi
 
