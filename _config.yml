@@ -1,4 +1,16 @@
 name: Ramanujan Raghavan
-markdown: kramdown
-gems:
-  - jekyll-sitemap
+url: .
+lsi: false
+safe: true
+source: .
+plugins:
+        - jekyll-figure
+incremental: false
+highlighter: rouge
+gist:
+        noscript: false
+kramdown:
+        parse_block_html: true
+        math_engine: mathjax
+        syntax_highlighter: rouge
+
