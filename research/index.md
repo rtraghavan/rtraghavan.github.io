@@ -8,7 +8,7 @@ title: Research
 #  Cortico-cerebellar circuits for eye movement control (2011-2016)
 
 
-<table style="float:right; margin-right:10px;">
+<table style="float:right; margin-right:10px; max-width=100%">
   <tbody>
     <tr>
       <td><img src="/img/F01.png" alt="Data" /></td>
