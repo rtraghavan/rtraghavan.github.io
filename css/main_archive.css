@@ -1,0 +1,266 @@
+body {
+  background: #fff;
+  font: 16px/1.4 "Helvetica", sans-serif;
+  color: #000;
+}
+
+#header {
+  font: 48px Helvetica;
+  margin-top: 50px;
+  font-weight: 300;
+  text-align: center;
+  letter-spacing: 0px;
+}
+
+#header a {
+  text-decoration: none;
+}
+
+#description {
+  margin: 0 30px font-weight: 300;
+  padding-top: 1em;
+  text-align: left;
+}
+
+#description img {
+  width: 180px;
+  float: left;
+  padding-right: 1em;
+  padding-bottom: 0.25em;
+}
+
+
+a {
+  word-spacing: 0px;
+  outline: 0;
+  color: #000;
+  text-decoration: underline;
+  cursor: pointer;
+  -webkit-transition: opacity 0.4s linear;
+  opacity: 1;
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+}
+
+
+
+a:hover,
+a:active {
+  color: #FA9F42;
+  text-decoration: none;
+  -webkit-transition: opacity 0.4s linear;
+  opacity: 1;
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+}
+
+figure {
+  float: right;
+  display: table;
+  max-width: 432px;
+  margin: 0px;
+}
+table {
+  float:none;
+  align-self: center;
+  max-width: 432px;
+  margin:auto auto auto auto;
+
+}
+table2 {
+  float:right;
+  align-self: center;
+  max-width: 432px;
+  margin:auto auto auto auto;
+}
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+figure img {
+  display: table;
+  margin: 0px;
+}
+
+figcaption {
+  display: table-caption;
+  caption-side: bottom;
+  margin-right: auto;
+  margin-bottom: auto;
+  background: white;
+  text-align: bottom;
+}
+
+p {
+  font-size: 1.5em;
+  line-height: 1.4em;
+  color: #333;
+}
+
+p2.heading1 {
+  display: block;
+  font-size: 1em;
+  line-height: 1.4em;
+  padding-left: 25px;
+  text-indent: -25px;
+  color: #333;
+
+  margin: auto auto 20px auto;
+}
+
+p2 {
+  display: block;
+  font-size: 1em;
+  line-height: 1.4em;
+  padding-left: 25px;
+  text-indent: -25px;
+  color: #333;
+
+  margin: auto auto 20px auto;
+
+}
+
+h1 {
+  text-decoration: underline;
+  margin: auto;
+  font: 32px "Helvetica", sans-serif;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+  text-align:center;
+}
+
+h1 a {
+  color: inherit;
+}
+
+h2 {
+  text-decoration: underline;
+
+  margin: auto auto 5px auto;
+
+  font: 24px "Helvetica", sans-serif;
+}
+
+h3 {
+  text-decoration: underline;
+
+  margin: auto;
+
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+p {
+  margin: 15px 0;
+}
+
+em,
+i {
+  font: "Arial", sans-serif;
+  font-style: italic;
+
+}
+img {
+  display:table;
+  max-width: 423px;
+
+}
+
+
+strong,
+b {
+  font-weight: bold;
+}
+
+
+footer {
+  font-weight: 300;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+footer li {
+  font: 20px/1.4 "Helvetica", sans-serif;
+  text-align: center;
+
+  margin: 0 300px font-weight: 300;
+  padding-top: 1em;
+  text-align: justify;
+}
+}
+
+footer ul {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 0.25em;
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+nav {
+  text-align: center;
+  font-weight: 200;
+  bottom: 0;
+}
+
+nav li {
+  font-size: 3.00em;
+  margin: 1em 0;
+  list-style-type: none;
+  display: inline;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 0.25em;
+}
+
+nav a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0;
+  background-color: white;
+  text-decoration: none;
+}
+
+li {
+  display: inline-block;
+}
+
+
+li a {
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 1.00em;
+  text-decoration: none;
+}
+
+.active {
+  color: #FA9F42;
+}
+
+/*making a navigation bar*/
+.container {
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 0 10px;
+  width: 100%;
+}
