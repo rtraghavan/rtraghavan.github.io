@@ -1,45 +1,9 @@
-@font-face {
-  font-family: "et-book";
-  src: url("et-book/et-book-roman-line-figures/et-book-roman-line-figures.eot");
-  src: url("et-book/et-book-roman-line-figures/et-book-roman-line-figures.eot?#iefix") format("embedded-opentype"), url("et-book/et-book-roman-line-figures/et-book-roman-line-figures.woff") format("woff"), url("et-book/et-book-roman-line-figures/et-book-roman-line-figures.ttf") format("truetype"), url("et-book/et-book-roman-line-figures/et-book-roman-line-figures.svg#etbookromanosf") format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "et-book";
-  src: url("et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.eot");
-  src: url("et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.eot?#iefix") format("embedded-opentype"), url("et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.woff") format("woff"), url("et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.ttf") format("truetype"), url("et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.svg#etbookromanosf") format("svg");
-  font-weight: normal;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "et-book";
-  src: url("et-book/et-book-bold-line-figures/et-book-bold-line-figures.eot");
-  src: url("et-book/et-book-bold-line-figures/et-book-bold-line-figures.eot?#iefix") format("embedded-opentype"), url("et-book/et-book-bold-line-figures/et-book-bold-line-figures.woff") format("woff"), url("et-book/et-book-bold-line-figures/et-book-bold-line-figures.ttf") format("truetype"), url("et-book/et-book-bold-line-figures/et-book-bold-line-figures.svg#etbookromanosf") format("svg");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "et-book-roman-old-style";
-  src: url("et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.eot");
-  src: url("et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.eot?#iefix") format("embedded-opentype"), url("et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.woff") format("woff"), url("et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.ttf") format("truetype"), url("et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.svg#etbookromanosf") format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
 body {
   width: 87.5%;
   margin-left: auto;
   margin-right: auto;
   padding-left: 12.5%;
-  font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+  font-family: et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
   max-width: 1400px;
   counter-reset: sidenote-counter;
 }
@@ -47,10 +11,11 @@ body {
 html {
   font-size: 15px;
 }
+
 #header {
-  font-size: 55px;
-  font-weight: 400;
+  font: 48px Helvetica;
   margin-top: 50px;
+  font-weight: 300;
   text-align: center;
   letter-spacing: 0px;
 }
@@ -137,6 +102,36 @@ figcaption {
   text-align: bottom;
 }
 
+p {
+  font-size: 1.5em;
+  line-height: 1.4em;
+  color: #333;
+}
+
+p2.heading1 {
+  display: block;
+  font-size: 1em;
+  line-height: 1.4em;
+  padding-left: 25px;
+  text-indent: -25px;
+  color: #333;
+
+  margin: auto auto 20px auto;
+}
+
+p2 {
+  display: block;
+  font-size: 1em;
+  line-height: 1.4em;
+  padding-left: 25px;
+  text-indent: -25px;
+  color: #333;
+
+  margin: auto auto 20px auto;
+
+}
+
+
 h1 {
   font-weight: 400;
   margin-top: 4rem;
@@ -163,26 +158,8 @@ h3 {
   line-height: 1;
 }
 
-
-article {
-  padding: 5rem 0rem;
-}
-
-section {
-  padding-top: 1.5rem;
-  padding-bottom: 1rem;
-}
-
-p{
-  font-size: 1.4rem;
-  line-height: 2rem;
-}
-
 p {
-  margin-top: 1.4rem;
-  margin-bottom: 1.4rem;
-  padding-right: 0;
-  vertical-align: baseline;
+  margin: 15px 0;
 }
 
 p.subtitle {
@@ -199,7 +176,11 @@ i {
   font-style: italic;
 
 }
+img {
+  display:table;
+  max-width: 423px;
 
+}
 
 
 strong,
@@ -270,7 +251,6 @@ figure.fullwidth figcaption {
 }
 
 footer {
-  font-size:40 px;
   font-weight: 300;
   bottom: 0;
   width: 100%;
@@ -278,10 +258,13 @@ footer {
 }
 
 footer li {
-  font-size: 30px;
+  font: 20px/1.4 "Helvetica", sans-serif;
   text-align: center;
+
+  margin: 0 300px font-weight: 300;
   padding-top: 1em;
   text-align: justify;
+}
 }
 
 footer ul {
@@ -304,7 +287,7 @@ nav {
 }
 
 nav li {
-  font-size: 2.50em;
+  font-size: 3.00em;
   margin: 1em 0;
   list-style-type: none;
   display: inline;
@@ -361,12 +344,12 @@ img {
 .marginnote {
   float: right;
   clear: right;
-  margin-right: -80%;
-  width: 70%;
-  margin-top: 0.4rem;
+  margin-right: -60%;
+  width: 50%;
+  margin-top: 0.3rem;
   margin-bottom: 0;
-  font-size: 0.90rem;
-  line-height: 1.2;
+  font-size: 1.1rem;
+  line-height: 1.3;
   vertical-align: baseline;
   position: relative;
 }
@@ -498,7 +481,6 @@ label.margin-toggle:not(.sidenote-number) {
 
   hr,
   section > p,
-  section > footer,
   section > table {
       width: 100%;
   }
@@ -563,4 +545,7 @@ label.margin-toggle:not(.sidenote-number) {
       width: 85%;
   }
 
+  img {
+      width: 100%;
+  }
 }
