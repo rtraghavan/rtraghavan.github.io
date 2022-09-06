@@ -270,6 +270,7 @@ figure.fullwidth figcaption {
 }
 
 footer {
+  margin-top:3em;
   font-size:40 px;
   font-weight: 300;
   bottom: 0;
@@ -361,8 +362,8 @@ img {
 .marginnote {
   float: right;
   clear: right;
-  margin-right: -80%;
-  width: 70%;
+  margin-right: -70%;
+  width: 65%;
   margin-top: 0.4rem;
   margin-bottom: 0;
   font-size: 0.90rem;
