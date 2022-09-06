@@ -6,3 +6,5 @@ gem 'rake' , '>= 0.9.2'
 source "https://rubygems.org"
 
 # gem "rails"
+
+gem "webrick", "~> 1.7"
