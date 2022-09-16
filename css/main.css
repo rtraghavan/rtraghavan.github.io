@@ -42,6 +42,8 @@ body {
   font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
   max-width: 1400px;
   counter-reset: sidenote-counter;
+  display: flex;
+  flex-direction: column;
 }
 
 html {
@@ -71,7 +73,6 @@ html {
   padding-right: 1em;
   padding-bottom: 0.25em;
 }
-
 
 a {
   word-spacing: 0px;
@@ -270,15 +271,18 @@ figure.fullwidth figcaption {
 }
 
 footer {
-  margin-top:3em;
-  font-size:40 px;
+  margin-top:0em;
+  font-size:400 px;
   font-weight: 300;
   bottom: 0;
-  width: 100%;
+
+  padding-top: auto;
+  width: auto;
   text-align: center;
 }
 
 footer li {
+  margin-top:0em;
   font-size: 30px;
   text-align: center;
   padding-top: 1em;
@@ -365,7 +369,7 @@ img {
   margin-right: -70%;
   width: 65%;
   margin-top: 0.4rem;
-  margin-bottom: 0;
+  margin-bottom: .4rem;
   font-size: 0.90rem;
   line-height: 1.2;
   vertical-align: baseline;
@@ -492,9 +496,10 @@ label.margin-toggle:not(.sidenote-number) {
 
 @media (max-width: 760px) {
   body {
-      width: 84%;
+      width: 50%;
       padding-left: 8%;
       padding-right: 8%;
+      padding-top: 8%;
   }
 
   hr,
