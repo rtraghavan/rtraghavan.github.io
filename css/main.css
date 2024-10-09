@@ -412,6 +412,11 @@ table.fullwidth {
   width: 100%;
 }
 
+.flex-container {
+  display: flex;
+  align-items: center; /* Center items vertically */
+}
+
 div.table-wrapper {
   overflow-x: auto;
   font-family: "Trebuchet MS", "Gill Sans", "Gill Sans MT", sans-serif;
