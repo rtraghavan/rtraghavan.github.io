@@ -372,8 +372,8 @@ img {
   margin-bottom: .4rem;
   font-size: 0.90rem;
   line-height: 1.2;
-  vertical-align: baseline;
-  position: middle;
+  vertical-align: middle;
+  position: relative;
 }
 
 .sidenote-number {
