@@ -10,10 +10,6 @@
 <link rel="stylesheet" href="{{ site.baseurl }}/css/academicons/css/academicons.css" />
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<div id="header">
-	<a href="/">RT Raghavan, PhD</a>
-</div>
-
 <body >
 	<div id="main" role="main" class="container">
 		{{ content }}
@@ -21,15 +17,30 @@
 </body>
 
 <footer class="footer">
-  <ul>
-		<li>
-			<a href="/">About me</a>
-		</li>
-    	
-    	<li>
-			<a href="/connect">Connect</a>
-		</li> 
-  </ul>
+  <nav role="navigation" aria-label="Footer navigation">
+    <ul>
+      <li>
+        <a href="/" aria-label="Navigate to About me page">
+          <i class="fa fa-user" aria-hidden="true"></i>
+          <span>About me</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/background" aria-label="Navigate to Work & Research page">
+          <i class="fa fa-briefcase" aria-hidden="true"></i>
+          <span>Work & Research</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/connect" aria-label="Navigate to Contact page">
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+          <span>Contact</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
 </footer>
 
 </html>

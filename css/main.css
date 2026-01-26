@@ -54,16 +54,29 @@ html {
   font-size: 55px;
   font-weight: 400;
   margin-top: 50px;
-  text-align: center;
+  text-align: left;
   letter-spacing: 0px;
+  padding-left: 10px; /* Align with container padding */
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #header a {
   text-decoration: none;
 }
 
+.header-role {
+  font-size: 28px;
+  font-weight: 400;
+  margin-top: 0.5rem;
+  letter-spacing: 0px;
+  color: inherit;
+}
+
 #description {
-  margin: 0 30px font-weight: 300;
+  margin: 0 30px;
+  font-weight: 300;
   padding-top: 1em;
   text-align: left;
 }
@@ -175,6 +188,147 @@ section {
   padding-bottom: 1rem;
 }
 
+/* Hero section - two column layout */
+.hero {
+  padding-top: 1rem; /* Reduced excess whitespace above hero content */
+  padding-bottom: 2rem; /* Reduced to visually connect with summary row */
+  min-height: 60vh; /* Ensure enough height for vertical centering */
+  display: flex;
+  align-items: center; /* Center the hero content vertically */
+  width: 100%;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center; /* Vertically center text and image */
+  gap: 4rem; /* Increased gap for better visual separation while maintaining unity */
+  max-width: 100%;
+  width: 100%;
+}
+
+.hero-text {
+  flex: 0 1 auto;
+  max-width: 65ch; /* ~65 characters for optimal readability */
+  min-width: 0;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align to start, then shift down with padding */
+  padding-top: 1.5rem; /* Lower the name + subtitle block to align with image center */
+}
+
+.hero-name {
+  font-size: 55px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  margin-top: 0;
+  margin-bottom: 0; /* Tight spacing - no bottom margin */
+  line-height: 1.1;
+}
+
+.hero-name a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.hero-role {
+  font-size: 24px; /* Reduced from 28px for visual subordination */
+  font-weight: 300; /* Lighter weight to keep name as focal point */
+  margin-top: 0.25rem; /* Tightened spacing - reduced from 0.5rem */
+  margin-bottom: 0;
+  letter-spacing: 0px;
+  color: #444; /* Slightly muted to maintain connection but show subordination */
+  line-height: 1.2;
+}
+
+.hero-text p {
+  margin-top: 0.75rem; /* Moved upward - reduced from 1.25rem to sit closer to subtitle */
+  margin-bottom: 0.5rem;
+  line-height: 1.85rem; /* Increased slightly for better readability */
+  font-size: 1.15rem; /* Reduced by ~6% relative to subtitle (24px → ~22.5px) for de-emphasis */
+  font-weight: 300; /* Lighter weight for visual de-emphasis */
+  color: #444; /* Slightly more muted to keep it subordinate to name and role */
+  max-width: 65ch; /* Ensure paragraph width doesn't exceed ~65 characters */
+}
+
+.expertise-strip {
+  font-size: 0.9rem;
+  font-weight: 300;
+  font-variant: small-caps;
+  color: #333; /* Darker than paragraph text (#444) for increased visual presence */
+  letter-spacing: 0.12em; /* Increased from 0.08em for more visual prominence */
+  margin-top: 1.75rem; /* Increased margin-top to better separate from paragraph */
+  margin-bottom: 0;
+  line-height: 1.4;
+}
+
+.expertise-separator {
+  color: #888; /* Lighter color for separators to maintain polish */
+  margin: 0 0.5em; /* Spacing around separators */
+  font-weight: 200;
+}
+
+.hero-image {
+  flex: 0 0 auto;
+  max-width: 32%; /* Reduced from 40% so image doesn't overpower text */
+  min-width: 0;
+  display: flex;
+  align-items: center; /* Center image vertically */
+  justify-content: center;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  max-height: 100%; /* Ensure image height matches text block height */
+  display: block;
+  border-radius: 7px; /* Subtle rounded corners (6-8px range) */
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15), 0 2px 4px rgba(0, 0, 0, 0.1); /* Enhanced shadow for better depth */
+  border: 2px solid rgba(0, 0, 0, 0.12); /* More visible border to frame the image */
+  object-fit: contain; /* Maintain aspect ratio while fitting within constraints */
+}
+
+/* Summary section - minimal three-item layout */
+.summary-section {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1.5rem 0 2rem 0; /* Reduced top padding to connect with hero */
+}
+
+.summary-divider {
+  width: 100%;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.08); /* Very faint horizontal rule */
+  margin-bottom: 1.5rem;
+}
+
+.summary-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.summary-item {
+  flex: 1;
+  text-align: left;
+}
+
+.summary-title {
+  font-size: 1.1rem;
+  font-weight: 500; /* Heavier weight for increased contrast */
+  color: #222; /* Slightly darker for increased contrast */
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.02em;
+}
+
+.summary-description {
+  font-size: 0.9rem; /* Smaller for increased contrast */
+  font-weight: 300;
+  color: #666; /* Lighter for increased contrast */
+  line-height: 1.5;
+}
+
 p{
   font-size: 1.4rem;
   line-height: 2rem;
@@ -185,6 +339,38 @@ p {
   margin-bottom: 1.4rem;
   padding-right: 0;
   vertical-align: baseline;
+}
+
+/* Biography section styling */
+.bio-section {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.2;
+  color: #555;
+  letter-spacing: 0.01em;
+}
+
+.bio-section:first-of-type {
+  margin-top: 1rem;
+}
+
+/* Reduce gaps between sections for continuity */
+.bio-section + p {
+  margin-top: 0.5rem;
+}
+
+/* Increased line spacing for continuation paragraphs (page 2 effect) */
+.bio-continuation {
+  line-height: 2.2rem;
+}
+
+/* Reduce visual gap between paragraphs in bio sections */
+.bio-section ~ p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 p.subtitle {
@@ -272,22 +458,20 @@ figure.fullwidth figcaption {
 }
 
 footer {
-  margin-top:0em;
-  font-size:400 px;
+  margin-top: 3rem; /* Increased spacing to separate from hero section */
   font-weight: 300;
   bottom: 0;
-
-  padding-top: auto;
+  padding-top: 2rem; /* Added top padding for deliberate separation */
+  padding-bottom: 2rem;
   width: auto;
   text-align: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.1); /* Subtle border to visually separate navigation */
+  background-color: #fafafa; /* Light background for increased contrast */
 }
 
-footer li {
-  margin-top:0em;
-  font-size: 30px;
-  text-align: center;
-  padding-top: 1em;
-  text-align: justify;
+footer nav {
+  margin: 0;
+  padding: 0;
 }
 
 footer ul {
@@ -295,11 +479,105 @@ footer ul {
   margin: 0;
   margin-bottom: 0.25em;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  list-style: none;
+}
+
+footer li {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
 }
 
 footer a {
   text-decoration: none;
-  color: inherit;
+  color: #222;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  font-weight: 500;
+  font-size: 1.15rem;
+  letter-spacing: 0.02em;
+  padding: 0.75rem 1.25rem;
+  display: inline-block;
+  border-radius: 6px;
+  transition: all 0.3s ease-out;
+  position: relative;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  line-height: 1.4;
+}
+
+footer a i {
+  font-size: 1.1rem;
+  opacity: 0.85;
+  transition: opacity 0.3s ease-out;
+  vertical-align: middle;
+  margin-right: 0.5rem;
+}
+
+footer a span {
+  position: relative;
+  display: inline-block;
+  line-height: 1;
+  vertical-align: middle;
+}
+
+/* Hover effects - underline and color change */
+footer a:hover {
+  color: #FA9F42; /* Site accent color */
+  background-color: rgba(250, 159, 66, 0.1); /* Subtle background highlight */
+}
+
+footer a:hover i {
+  opacity: 1;
+}
+
+footer a:hover span::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #FA9F42;
+  transform: scaleX(1);
+  transition: transform 0.3s ease-out;
+  pointer-events: none; /* Prevent underline from affecting layout or interactions */
+}
+
+footer a span::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #FA9F42;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-out;
+  pointer-events: none; /* Prevent underline from affecting layout or interactions */
+}
+
+/* Active state */
+footer a:active {
+  color: #E88A2E; /* Slightly darker on click */
+  transform: translateY(1px);
+}
+
+/* Keyboard focus - accessibility */
+footer a:focus {
+  outline: 2px solid #FA9F42;
+  outline-offset: 3px;
+  color: #FA9F42;
+  background-color: rgba(250, 159, 66, 0.15);
+}
+
+footer a:focus span::after {
+  transform: scaleX(1);
 }
 
 
@@ -508,6 +786,30 @@ label.margin-toggle:not(.sidenote-number) {
       padding-top: 8%;
   }
 
+  #header {
+      font-size: 40px;
+      padding-left: 0; /* Remove padding on mobile to match container */
+  }
+
+  .header-role {
+      font-size: 20px;
+  }
+
+  .hero-text {
+      max-width: 100%; /* Full width on mobile for readability */
+  }
+
+  .hero-text p {
+      font-size: 1.1rem; /* Slightly smaller on mobile */
+  }
+
+  .expertise-strip {
+      font-size: 0.85rem; /* Slightly smaller on mobile */
+      margin-top: 1.5rem; /* Increased margin on mobile for separation */
+      letter-spacing: 0.12em; /* Maintain increased letter spacing */
+      color: #333; /* Consistent with desktop - darker than paragraph */
+  }
+
   hr,
   section > p,
   section > footer,
@@ -573,6 +875,108 @@ label.margin-toggle:not(.sidenote-number) {
   div.table-wrapper,
   table {
       width: 85%;
+  }
+
+  /* Hero section mobile styles */
+  .hero {
+      min-height: auto; /* Remove min-height on mobile */
+      padding-top: 0.5rem; /* Reduced whitespace on mobile */
+      padding-bottom: 3rem; /* Maintain separation on mobile */
+  }
+
+  .hero-text {
+      padding-top: 0.75rem; /* Reduced padding on mobile for better alignment */
+  }
+
+  footer {
+      margin-top: 2rem; /* Slightly less on mobile but still deliberate */
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+  }
+
+  footer ul {
+      flex-direction: column;
+      gap: 1.5rem; /* Vertical spacing on mobile */
+      padding: 0.5rem 0;
+  }
+
+  footer a {
+      font-size: 1.05rem;
+      padding: 0.875rem 1.5rem;
+      text-align: center;
+  }
+
+  footer a i {
+      font-size: 1rem;
+  }
+
+  .hero-content {
+      flex-direction: column;
+      gap: 2rem;
+      align-items: flex-start;
+  }
+
+  .hero-text {
+      max-width: 100%;
+  }
+
+  .hero-name {
+      font-size: 40px; /* Smaller on mobile */
+      margin-bottom: 0; /* Maintain tight spacing */
+  }
+
+  .hero-role {
+      font-size: 18px; /* Proportionally smaller on mobile */
+      margin-top: 0.2rem; /* Maintain tight spacing on mobile */
+      font-weight: 300; /* Consistent with desktop */
+  }
+
+  .hero-text p {
+      margin-top: 0.75rem; /* Consistent with desktop - closer to subtitle */
+      line-height: 1.8rem; /* Increased for readability on mobile */
+      font-size: 1.1rem; /* Proportionally reduced on mobile to maintain de-emphasis */
+      color: #444; /* Consistent with desktop */
+      max-width: 65ch; /* Maintain ~65 character width on mobile */
+  }
+
+  .hero-image {
+      max-width: 100%;
+      width: 100%;
+  }
+
+  .hero-image img {
+      border-radius: 6px; /* Slightly smaller on mobile */
+      box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15), 0 1px 3px rgba(0, 0, 0, 0.1); /* Enhanced shadow for mobile */
+      border: 2px solid rgba(0, 0, 0, 0.12); /* Consistent border on mobile */
+  }
+
+  /* Summary section mobile styles */
+  .summary-section {
+      padding: 1.25rem 0 1.5rem 0; /* Reduced padding on mobile */
+  }
+
+  .summary-divider {
+      margin-bottom: 1.25rem; /* Slightly less on mobile */
+  }
+
+  .summary-row {
+      flex-direction: column;
+      gap: 1.5rem;
+  }
+
+  .summary-item {
+      text-align: left;
+  }
+
+  .summary-title {
+      font-size: 1rem;
+      font-weight: 500; /* Maintain heavier weight on mobile */
+      color: #222; /* Maintain darker color on mobile */
+  }
+
+  .summary-description {
+      font-size: 0.85rem; /* Smaller on mobile */
+      color: #666; /* Maintain lighter color on mobile */
   }
 
 }

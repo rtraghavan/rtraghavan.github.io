@@ -1,5 +1,3 @@
-<p>I'm an applied scientist specializing in computer vision and multimodal learning. I develop vision-centric AI systems that perceive and reason about physical environments for safety-critical decision-making and injury risk modeling.</p>
-
-<p>I earned my PhD in Neurobiology from Duke University, where I worked with Stephen Lisberger and Marc Sommer to study the cerebellum’s role in planning and controlling eye movements. This research introduced me to a control-theoretic perspective on motor control and active perception—emphasizing state estimation, feedback, feedforward control, and adaptive learning in closed-loop systems—which continues to shape my approach to problems in robotic vision and control.</p>
-
-<p>Building on this foundation, I became a postdoctoral associate at NYU’s Center for Neural Science in Tony Movshon’s lab, where I treated perception as an inverse problem. My research combined behavioral psychophysics, neurophysiological recordings, and computational modeling to explore how visual information is encoded and decoded in cortical populations, with a focus on motion and scene perception. I also led translational projects optimizing clinical ECoG arrays and investigated the neural basis of amblyopia by relating perceptual deficits to cortical representations. This training established my approach: iterating between models, data, and measurement to build quantitative links across levels of analysis.</p>
+<p>I integrate visual perception and multimodal reasoning to model risk and inform decision-making in real-world physical environments. 
+</p>
+<div class="expertise-strip">Visual Perception <span class="expertise-separator">|</span> Multimodal Learning <span class="expertise-separator">|</span> Safety & Risk AI</div>
