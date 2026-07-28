@@ -5,6 +5,9 @@ safe: true
 source: .
 plugins:
         - jekyll-figure
+exclude:
+        - CLAUDE.md
+        - README.md
 incremental: false
 highlighter: rouge
 gist:
@@ -13,4 +16,11 @@ kramdown:
         parse_block_html: true
         math_engine: mathjax
         syntax_highlighter: rouge
+defaults:
+        - scope:
+                  path: ""
+                  type: posts
+          values:
+                  layout: post
+                  permalink: /blog/:title/
 

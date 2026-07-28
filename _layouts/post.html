@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>{{ page.title }}</title>
+	<!-- Blog posts are standalone Tufte handouts: they load tufte.css only, NOT the
+	     site-wide css/main.css, so this styling never leaks onto the rest of the site. -->
+	<link rel="stylesheet" type="text/css" href="/css/tufte.css"/>
+	<!-- MathJax: typesets the \( \) and \[ \] delimiters Kramdown emits from $$...$$ -->
+	<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script" async></script>
+	<style>
+		/* Minimal masthead + footer navigation, kept small so the handout reads as the page. */
+		.blog-masthead {
+			width: 55%;
+			margin-top: 2rem;
+			padding-bottom: 0.6rem;
+			border-bottom: 1px solid #ccc;
+			font-size: 1.2rem;
+		}
+		.blog-masthead a { text-decoration: none; }
+		.blog-nav { clear: both; margin-top: 4rem; padding: 1rem 0 3rem 0; font-size: 1.2rem; }
+		.blog-nav a { margin-right: 1.5rem; }
+		@media (max-width: 760px) {
+			.blog-masthead, .blog-nav { width: auto; }
+		}
+	</style>
+</head>
+<body>
+	<nav class="blog-masthead">
+		<a href="/">RT Raghavan, PhD</a>
+	</nav>
+
+	<article>
+		<h1>{{ page.title }}</h1>
+		<p class="subtitle">{{ page.date | date: "%B %-d, %Y" }}</p>
+		<section>
+			{{ content }}
+		</section>
+	</article>
+
+	<nav class="blog-nav">
+		<a href="/">About me</a>
+		<a href="/connect">Connect</a>
+		<a href="/blog">Blog</a>
+	</nav>
+</body>
+</html>

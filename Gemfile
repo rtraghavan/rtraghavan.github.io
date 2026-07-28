@@ -11,5 +11,7 @@ gem "webrick", "~> 1.7"  # Needed for Ruby ≥ 3.0
 gem "csv", "~> 3.2"
 gem "bigdecimal", "~> 3.1"
 gem "zeitwerk", "< 2.7"
-# Optional: Fix Ruby version explicitly (recommended for GitHub Pages)
-ruby "3.1.7"
+# The github-pages gem pins Jekyll 3.9 / Liquid 4.0.3, which calls the removed
+# String#tainted? and therefore only runs on Ruby 3.1.x (not 3.2+). Constrain the
+# local Ruby to 3.1.x so `bundle` fails fast with a clear message on newer Rubies.
+ruby "~> 3.1.0"

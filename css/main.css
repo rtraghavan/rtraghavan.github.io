@@ -351,6 +351,26 @@ li a {
   color: #FA9F42;
 }
 
+/* blog post listing: undo the nav-oriented ul/li styling */
+.post-list {
+  background: none;
+}
+
+.post-list li {
+  display: block;
+}
+
+.post-list li:not(:first-child) {
+  margin-top: 0.5rem;
+}
+
+.post-list li a {
+  padding-left: 0;
+  padding-right: 0;
+  font-size: 1.4rem;
+  text-decoration: underline;
+}
+
 /*making a navigation bar*/
 .container {
   margin: 0 auto;
