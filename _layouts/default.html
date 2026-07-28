@@ -4,6 +4,8 @@
 	<title>{{ page.title }}</title>
 	<!-- link to main stylesheet -->
 	<link rel="stylesheet" type="text/css" href="/css/main.css">
+	<!-- shared header navigation (same nav on the main site and the Tufte blog) -->
+	<link rel="stylesheet" type="text/css" href="/css/site-nav.css">
 	<!-- MathJax: typesets the \( \) and \[ \] delimiters Kramdown emits from $$...$$ -->
 	<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script" async></script>
 </head>
@@ -13,43 +15,10 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <body >
+	{% include site-nav.html %}
 	<div id="main" role="main" class="container">
 		{{ content }}
 	</div>
 </body>
-
-<footer class="footer">
-  <nav role="navigation" aria-label="Footer navigation">
-    <ul>
-      <li>
-        <a href="/" aria-label="Navigate to About me page">
-          <i class="fa fa-user" aria-hidden="true"></i>
-          <span>About me</span>
-        </a>
-      </li>
-
-      <li>
-        <a href="/background" aria-label="Navigate to Work & Research page">
-          <i class="fa fa-briefcase" aria-hidden="true"></i>
-          <span>Work & Research</span>
-        </a>
-      </li>
-
-      <li>
-        <a href="/blog" aria-label="Navigate to Blog page">
-          <i class="fa fa-pencil" aria-hidden="true"></i>
-          <span>Blog</span>
-        </a>
-      </li>
-
-      <li>
-        <a href="/connect" aria-label="Navigate to Contact page">
-          <i class="fa fa-envelope" aria-hidden="true"></i>
-          <span>Contact</span>
-        </a>
-      </li>
-    </ul>
-  </nav>
-</footer>
 
 </html>

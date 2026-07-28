@@ -5,31 +5,25 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>{{ page.title }}</title>
 	<!-- Blog posts are standalone Tufte handouts: they load tufte.css only, NOT the
-	     site-wide css/main.css, so this styling never leaks onto the rest of the site. -->
+	     site-wide css/main.css, so this styling never leaks onto the rest of the site.
+	     site-nav.css is shared with the main layout so the nav is identical everywhere. -->
 	<link rel="stylesheet" type="text/css" href="/css/tufte.css"/>
+	<link rel="stylesheet" type="text/css" href="/css/site-nav.css"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<!-- MathJax: typesets the \( \) and \[ \] delimiters Kramdown emits from $$...$$ -->
 	<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script" async></script>
 	<style>
-		/* Minimal masthead + footer navigation, kept small so the handout reads as the page. */
-		.blog-masthead {
-			width: 55%;
-			margin-top: 2rem;
-			padding-bottom: 0.6rem;
-			border-bottom: 1px solid #ccc;
-			font-size: 1.2rem;
-		}
-		.blog-masthead a { text-decoration: none; }
-		.blog-nav { clear: both; margin-top: 4rem; padding: 1rem 0 3rem 0; font-size: 1.2rem; }
-		.blog-nav a { margin-right: 1.5rem; }
-		@media (max-width: 760px) {
-			.blog-masthead, .blog-nav { width: auto; }
-		}
+		/* tufte.css puts the readable measure (width + 12.5% left padding) on <body>,
+		   which would push the full-width site-nav header off-centre. Move that measure
+		   onto <article> instead so <body> is full width and the shared header spans the
+		   viewport exactly as it does on the main site. The article's content box keeps the
+		   same width and offset as before, so the Tufte sidenote/margin layout is unchanged. */
+		body { width: 100%; max-width: none; margin: 0; padding-left: 0; }
+		article { width: 87.5%; max-width: 1400px; margin-left: auto; margin-right: auto; padding-left: 12.5%; }
 	</style>
 </head>
 <body>
-	<nav class="blog-masthead">
-		<a href="/">RT Raghavan, PhD</a>
-	</nav>
+	{% include site-nav.html %}
 
 	<article>
 		<h1>{{ page.title }}</h1>
@@ -38,11 +32,5 @@
 			{{ content }}
 		</section>
 	</article>
-
-	<nav class="blog-nav">
-		<a href="/">About me</a>
-		<a href="/connect">Connect</a>
-		<a href="/blog">Blog</a>
-	</nav>
 </body>
 </html>

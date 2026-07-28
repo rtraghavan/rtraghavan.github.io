@@ -1,0 +1,130 @@
+/* Site header navigation — the single source of truth for the nav, shared by the
+   main layout (default.html) and the standalone Tufte blog layout (post.html) so the
+   nav is identical everywhere. It sits at the top of every page as a full-width header.
+
+   Every rule is scoped under `.site-nav` so it out-specifies two legacy strays in
+   main.css — `nav li { font-size: 2.5em }` and `li a { font-size: 1em }` — that would
+   otherwise inflate the links, and beats tufte.css's `a:link`/`a:hover` on the blog. */
+
+.site-nav {
+  width: 100vw;
+  margin-left: calc(50% - 50vw); /* full-bleed band regardless of the centered/padded body */
+  margin-bottom: 2.5rem;
+  padding: 0.9rem 1rem;
+  box-sizing: border-box;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  background-color: #fafafa;
+  text-align: center;
+}
+
+.site-nav nav {
+  margin: 0;
+  padding: 0;
+}
+
+.site-nav nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem 2rem; /* 2rem (30px) between items horizontally — well above the 24px minimum */
+}
+
+.site-nav nav li {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  font-size: 1rem; /* neutralise the legacy `nav li { font-size: 2.5em }` */
+}
+
+.site-nav nav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 24px; /* WCAG target size: clickable area >= 24x24px */
+  padding: 0.5rem 1rem; /* ~7.5px x 15px — grows the tap target comfortably past 24px */
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  font-weight: 500;
+  font-size: 1.05rem; /* deliberate nav size: below body (1.15–1.4rem), far below the name */
+  letter-spacing: 0.03em;
+  line-height: 1.4;
+  color: #222;
+  text-decoration: none;
+  border-radius: 6px;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  transition: all 0.3s ease-out;
+}
+
+.site-nav nav a i {
+  margin-right: 0.5rem;
+  font-size: 1em; /* icon sized to match the label text */
+  opacity: 0.8;
+  transition: opacity 0.3s ease-out;
+}
+
+.site-nav nav a span {
+  position: relative;
+  display: inline-block;
+  line-height: 1;
+}
+
+/* Accent hover/focus: color shift + animated underline on the site's #FA9F42 */
+.site-nav nav a:hover,
+.site-nav nav a:focus {
+  color: #FA9F42;
+  background-color: rgba(250, 159, 66, 0.1);
+}
+
+.site-nav nav a:hover i,
+.site-nav nav a:focus i {
+  opacity: 1;
+}
+
+.site-nav nav a span::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #FA9F42;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-out;
+  pointer-events: none;
+}
+
+.site-nav nav a:hover span::after,
+.site-nav nav a:focus span::after {
+  transform: scaleX(1);
+}
+
+.site-nav nav a:active {
+  color: #E88A2E;
+  transform: translateY(1px);
+}
+
+.site-nav nav a:focus {
+  outline: 2px solid #FA9F42;
+  outline-offset: 3px;
+}
+
+@media (max-width: 760px) {
+  .site-nav {
+    margin-bottom: 1.5rem;
+    padding: 0.6rem 0.5rem;
+  }
+
+  .site-nav nav ul {
+    gap: 0.4rem 1rem;
+  }
+
+  .site-nav nav a {
+    font-size: 0.95rem;
+    padding: 0.4rem 0.6rem;
+  }
+}

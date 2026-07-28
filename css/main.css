@@ -232,13 +232,14 @@ section {
 }
 
 .hero-role {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif; /* sans-serif bridge: serif name -> sans role -> sans nav */
   font-size: 24px; /* Reduced from 28px for visual subordination */
-  font-weight: 300; /* Lighter weight to keep name as focal point */
-  margin-top: 0.25rem; /* Tightened spacing - reduced from 0.5rem */
+  font-weight: 400; /* Regular sans reads lighter than the Palatino name above */
+  margin-top: 0.4rem;
   margin-bottom: 0;
   letter-spacing: 0px;
   color: #444; /* Slightly muted to maintain connection but show subordination */
-  line-height: 1.2;
+  line-height: 1.25;
 }
 
 .hero-text p {
@@ -252,10 +253,11 @@ section {
 }
 
 .expertise-strip {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif; /* sans-serif bridge, matching the role + nav */
   font-size: 0.9rem;
-  font-weight: 300;
+  font-weight: 500; /* medium weight so the small-caps tags carry enough contrast */
   font-variant: small-caps;
-  color: #333; /* Darker than paragraph text (#444) for increased visual presence */
+  color: #2a2a2a; /* darker than before (#333) — ~13:1 on white, well past 4.5:1 */
   letter-spacing: 0.12em; /* Increased from 0.08em for more visual prominence */
   margin-top: 1.75rem; /* Increased margin-top to better separate from paragraph */
   margin-bottom: 0;
@@ -263,9 +265,9 @@ section {
 }
 
 .expertise-separator {
-  color: #888; /* Lighter color for separators to maintain polish */
+  color: #666; /* darkened from #888 so separators also clear 4.5:1 */
   margin: 0 0.5em; /* Spacing around separators */
-  font-weight: 200;
+  font-weight: 400;
 }
 
 .hero-image {
@@ -457,128 +459,9 @@ figure.fullwidth figcaption {
   margin-right: 24%;
 }
 
-footer {
-  margin-top: 3rem; /* Increased spacing to separate from hero section */
-  font-weight: 300;
-  bottom: 0;
-  padding-top: 2rem; /* Added top padding for deliberate separation */
-  padding-bottom: 2rem;
-  width: auto;
-  text-align: center;
-  border-top: 1px solid rgba(0, 0, 0, 0.1); /* Subtle border to visually separate navigation */
-  background-color: #fafafa; /* Light background for increased contrast */
-}
-
-footer nav {
-  margin: 0;
-  padding: 0;
-}
-
-footer ul {
-  padding: 0;
-  margin: 0;
-  margin-bottom: 0.25em;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: baseline;
-  flex-wrap: wrap;
-  gap: 2.5rem;
-  list-style: none;
-}
-
-footer li {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  align-items: center;
-}
-
-footer a {
-  text-decoration: none;
-  color: #222;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
-  font-weight: 500;
-  font-size: 1.15rem;
-  letter-spacing: 0.02em;
-  padding: 0.75rem 1.25rem;
-  display: inline-block;
-  border-radius: 6px;
-  transition: all 0.3s ease-out;
-  position: relative;
-  outline: 2px solid transparent;
-  outline-offset: 2px;
-  line-height: 1.4;
-}
-
-footer a i {
-  font-size: 1.1rem;
-  opacity: 0.85;
-  transition: opacity 0.3s ease-out;
-  vertical-align: middle;
-  margin-right: 0.5rem;
-}
-
-footer a span {
-  position: relative;
-  display: inline-block;
-  line-height: 1;
-  vertical-align: middle;
-}
-
-/* Hover effects - underline and color change */
-footer a:hover {
-  color: #FA9F42; /* Site accent color */
-  background-color: rgba(250, 159, 66, 0.1); /* Subtle background highlight */
-}
-
-footer a:hover i {
-  opacity: 1;
-}
-
-footer a:hover span::after {
-  content: '';
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background-color: #FA9F42;
-  transform: scaleX(1);
-  transition: transform 0.3s ease-out;
-  pointer-events: none; /* Prevent underline from affecting layout or interactions */
-}
-
-footer a span::after {
-  content: '';
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background-color: #FA9F42;
-  transform: scaleX(0);
-  transition: transform 0.3s ease-out;
-  pointer-events: none; /* Prevent underline from affecting layout or interactions */
-}
-
-/* Active state */
-footer a:active {
-  color: #E88A2E; /* Slightly darker on click */
-  transform: translateY(1px);
-}
-
-/* Keyboard focus - accessibility */
-footer a:focus {
-  outline: 2px solid #FA9F42;
-  outline-offset: 3px;
-  color: #FA9F42;
-  background-color: rgba(250, 159, 66, 0.15);
-}
-
-footer a:focus span::after {
-  transform: scaleX(1);
-}
+/* The site footer navigation now lives in css/footer-nav.css (shared with the
+   Tufte blog layout). Only the general `nav` rules below remain here, used by the
+   connect page's social-icon nav. */
 
 
 nav {
@@ -639,14 +522,28 @@ li a {
 }
 
 .post-list li:not(:first-child) {
-  margin-top: 0.5rem;
+  margin-top: 1.6rem;
 }
 
 .post-list li a {
   padding-left: 0;
   padding-right: 0;
-  font-size: 1.4rem;
+  font-size: 1.9rem;
+  line-height: 1.2;
+  text-decoration: none;
+}
+
+.post-list li a:hover {
   text-decoration: underline;
+}
+
+.post-date {
+  display: block;
+  margin-top: 0.2rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+  color: #777;
 }
 
 /*making a navigation bar*/
@@ -906,28 +803,6 @@ label.margin-toggle:not(.sidenote-number) {
 
   .hero-text {
       padding-top: 0.75rem; /* Reduced padding on mobile for better alignment */
-  }
-
-  footer {
-      margin-top: 2rem; /* Slightly less on mobile but still deliberate */
-      padding-top: 1.5rem;
-      padding-bottom: 1.5rem;
-  }
-
-  footer ul {
-      flex-direction: column;
-      gap: 1.5rem; /* Vertical spacing on mobile */
-      padding: 0.5rem 0;
-  }
-
-  footer a {
-      font-size: 1.05rem;
-      padding: 0.875rem 1.5rem;
-      text-align: center;
-  }
-
-  footer a i {
-      font-size: 1rem;
   }
 
   .hero-content {
