@@ -2,7 +2,7 @@
 
 source "https://rubygems.org"
 
-gem "github-pages", "~> 227", group: :jekyll_plugins
+gem "github-pages", "~> 232", group: :jekyll_plugins
 gem "jekyll-figure"
 gem "rake", ">= 0.9.2"
 gem "webrick", "~> 1.7"  # Needed for Ruby ≥ 3.0
